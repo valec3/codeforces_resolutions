@@ -6,10 +6,11 @@ using namespace std;
 
 int main(){
 
-	int n{},t{},arr[101]={},r{},c1{},c2{};
+	int n{},t{},arr[101]={};
 
 	cin>>t;
 	while(t--){
+	    int r{},c1{},c2{1};
 		cin>>n;
 		for (int i = 0; i < n; ++i)
 		{
@@ -18,7 +19,6 @@ int main(){
 			c2*=arr[i];
 		}
 		
-
 		while(c1<0 or c2==-1 ){
 			c1+=2;
 			c2*=(-1);
